@@ -1,0 +1,56 @@
+body {
+    background-color:rgb(25, 25, 27);
+    color: azure;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+section{
+    display: block;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: end;
+}
+
+nav{
+    scroll-snap-align: start;
+    position: fixed;
+    background-color:rgba(0, 0, 139, 0.185);
+    width:100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 5px;
+    padding: 5px;
+    align-items: center;
+}
+
+nav ul li:hover {
+    background-color: azure;
+    color: rgb(25, 25, 27);
+    border-radius: 5px;    
+}
+
+.mainImg{
+    width: auto;
+    height: 100vh;
+    margin:auto;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+    color: azure;
+}
+

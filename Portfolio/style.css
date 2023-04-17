@@ -40,12 +40,12 @@ a {
 .gallery{
     display: flex;
     height: 30rem;
-    gap: 1rem;
     background-color: azure;
+    transition: height 0.6s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .gallery:hover{
-    height: 50rem;
+    height: 40rem;
 }
 
 .gallery div{
@@ -54,7 +54,7 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto 100%;
-    transition: all .6s cubic-bezier cubic-bezier(0.25, 0.25, 0.25, 0.25);
+    transition: all .9s cubic-bezier(0.95, 0.05, 0.795, 0.035);
 }
 
 .gallery div:hover{
@@ -64,5 +64,4 @@ a {
 section{
     height: 100vh;
     scroll-snap-align: start;
-    scroll-snap-stop: end;
 }
